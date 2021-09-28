@@ -16,37 +16,98 @@
           <p id="countdown">1:00</p>
         </form>
     </nav>
-    
-    const myQuestions = [
-  {
-    question: "Who invented JavaScript?",
-    answers: {
-      a: "Douglas Crockford",
-      b: "Sheryl Sandberg",
-      c: "Brendan Eich"
-    },
-    correctAnswer: "c"
-  },
-  {
-    question: "Which one of these is a JavaScript package manager?",
-    answers: {
-      a: "Node.js",
-      b: "TypeScript",
-      c: "npm"
-    },
-    correctAnswer: "c"
-  },
-  {
-    question: "Which tool can you use to ensure code quality?",
-    answers: {
-      a: "Angular",
-      b: "jQuery",
-      c: "RequireJS",
-      d: "ESLint"
-    },
-    correctAnswer: "d"
-  }
-    ];
+
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center row">
+          <div class="col-md-10 col-lg-10">
+              <div class="border">
+                  <!-- answer is C -->
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                          <h4>Coding Quiz</h4><span>(1 of 5)</span>
+                      </div>
+                  </div>
+                  <div class="question bg-white p-3 border-bottom">
+                      <div class="d-flex flex-row align-items-center question-title">
+                          <h3 class="text-danger">Q.</h3>
+                          <h5 class="mt-1 ml-2">Who invented JavaScript?</h5>
+                      </div>
+                      <div class="ans ml-2">
+                          <label class="radio"> <input type="radio" name="Douglas Crockford" value="Douglas Crockford"> <span>Douglas Crockford</span>
+                          </label>
+                      </div>
+                      <div class="ans ml-2">
+                          <label class="radio"> <input type="radio" name="Sheryl Sandberg" value="Sheryl Sandberg"> <span>Sheryl Sandberg</span>
+                          </label>
+                      </div>
+                      <div class="ans ml-2">
+                          <label class="radio"> <input type="radio" name="Brendan Eich" value="Brendan Eich"> <span>Brendan Eich</span>
+                          </label>
+                      </div>
+                  </div>
+                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+              </div>
+              <div class="border">
+                <!-- answer is C -->
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                        <h4>Coding Quiz</h4><span>(2 of 5)</span>
+                    </div>
+                </div>
+                <div class="question bg-white p-3 border-bottom">
+                    <div class="d-flex flex-row align-items-center question-title">
+                        <h3 class="text-danger">Q.</h3>
+                        <h5 class="mt-1 ml-2">Which one of these is a JavaScript package manager?</h5>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="Node.js" value="Node.js"> <span>Node.js</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="TypeScript" value="TypeScript"> <span>TypeScript</span>
+                        </label>
+                    </div>
+                    <div class="ans ml-2">
+                        <label class="radio"> <input type="radio" name="npm" value="npm"> <span>npm</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+            </div>
+            <div class="border">
+              <!-- answer is D -->
+              <div class="question bg-white p-3 border-bottom">
+                  <div class="d-flex flex-row justify-content-between align-items-center mcq">
+                      <h4>Coding Quiz</h4><span>(3 of 5)</span>
+                  </div>
+              </div>
+              <div class="question bg-white p-3 border-bottom">
+                  <div class="d-flex flex-row align-items-center question-title">
+                      <h3 class="text-danger">Q.</h3>
+                      <h5 class="mt-1 ml-2">Which tool can you use to ensure code quality?</h5>
+                  </div>
+                  <div class="ans ml-2">
+                      <label class="radio"> <input type="radio" name="Angular" value="Angular"> <span>Angular</span>
+                      </label>
+                  </div>
+                  <div class="ans ml-2">
+                      <label class="radio"> <input type="radio" name="jQuery" value="jQuery"> <span>jQuery</span>
+                      </label>
+                  </div>
+                  <div class="ans ml-2">
+                      <label class="radio"> <input type="radio" name="RequireJS" value="RequireJS"> <span>RequireJS</span>
+                      </label>
+                  </div>
+                  <div class="ans ml-2">
+                    <label class="radio"> <input type="radio" name="ESLint" value="ESLint"> <span>ESLint</span>
+                    </label>
+                </div>
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+          </div>
+          </div>
+      </div>
+  </div>
     
     <script src="./assets/js/script.js"></script>
 </body>
