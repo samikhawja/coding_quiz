@@ -45,21 +45,28 @@ To start the quiz, there will be a start button, when clicked, will initiate the
 <!-- USAGE EXAMPLES -->
 ## Code Snippet
 
-While coding this generator, this piece of code below became the hardest to figure out. I had to create a new function that would calcualte the requested length of the password and display the correct amount. I then used a "for" loop to generatr a password and push the password in the display. The ".join" would display the generated password without commas.
-
+While coding this generator, this piece of code / function proved to be the hardest to figure out. I had to create a function that would display the question then display the next question after the right answer was selected. I had to use event listeners, text content and many more just to display a question! This part of the javascript wasn't easy but it was fun because of the challenge.
 ```
-function getRandom(arr) {
-    var randomIndex = Math.floor(Math.random() * arr.length);
-    var element = arr[randomIndex]
-    return element
-  }
-
-  for (var i = 0; i < passwordLengthUser; i++) {
-    var randomChar = getRandom(passwordChar)
-    password.push(randomChar)
-    console.log(password)
-  }
-  return password.join("")
+function displayQuestion() {
+		currentQuestionElement.textContent = currentQuestionIndex + 1;
+    var currentQuestion = questions[currentQuestionIndex];
+    questionElement.textContent = currentQuestion.question
+    for(var i=0; i<questions[currentQuestionIndex].selections.length; i++){
+        var newButton = document.createElement("button");
+        selectionsElement.append(newButton);
+        newButton.textContent = currentQuestion.selections[i];
+        newButton.setAttribute("class", "button" + [i]);
+        newButton.setAttribute("value", currentQuestion.selections[i])
+        newButton.addEventListener('click', function(e) {
+            if (e.target.value !== currentQuestion.answer) {
+            		time -= 5;
+                return;
+            }
+            
+            handleCorrectAnswer();
+        });
+    }
+}
 ```
 
 
