@@ -10,10 +10,12 @@
   </head>
   <body>
       <!-- start button will start countdown and question -->
-      <button id="myBtn">Start</button>
+      
       <nav class="navbar navbar-light bg-light">
           <form class="form-inline">
-              <button class="btn btn-outline-success" id="resetBtn" type="button">Reset</button>
+          		<button class="btn btn-outline-success" id="myBtn" type="button">Start</button>
+              &nbsp;
+              <button class="btn btn-outline-warning" id="resetBtn" type="button">Reset</button>
               <p id="countdown"></p>
           </form>
       </nav>
@@ -24,7 +26,7 @@
             <div class="border">
               <div class="question bg-white p-3 border-bottom">
                 <div class="d-flex flex-row justify-content-between align-items-center mcq">
-                  <h4>Coding Quiz</h4><span>(1 of 5)</span>
+                  <h4>Coding Quiz</h4><span>(<span id="currentQuestion">0</span> of 5)</span>
                 </div>
               </div>
               <div class="question bg-white p-3 border-bottom">
