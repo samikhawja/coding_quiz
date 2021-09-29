@@ -1,176 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Coding Quiz</title>
-</head>
-<body>
-    <nav class="navbar navbar-light bg-light">
-        <form class="form-inline">
-          <button class="btn btn-outline-success" type="button">Coding Quiz</button>
-          <button class="btn btn-sm btn-outline-secondary" type="button">Reset</button>
-          <p id="countdown">1:00</p>
-        </form>
-    </nav>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <title>Coding Quiz</title>
+  </head>
+  <body>
+    <!-- start button will start countdown and question -->
+      <nav class="navbar navbar-light bg-light">
+          <form class="form-inline">
+              <button class="btn btn-outline-success" type="button">Reset</button>
+              <p id="countdown"></p>
+          </form>
+      </nav>
 
-    <div class="container mt-5">
-      <div class="d-flex justify-content-center row">
+      <div class="container mt-5">
+        <div class="d-flex justify-content-center row">
           <div class="col-md-10 col-lg-10">
-              <div class="border">
-                  <!-- answer is C -->
-                  <div class="question bg-white p-3 border-bottom">
-                      <div class="d-flex flex-row justify-content-between align-items-center mcq">
-                          <h4>Coding Quiz</h4><span>(1 of 5)</span>
-                      </div>
-                  </div>
-                  <div class="question bg-white p-3 border-bottom">
-                      <div class="d-flex flex-row align-items-center question-title">
-                          <h3 class="text-danger">Q.</h3>
-                          <h5 class="mt-1 ml-2">Who invented JavaScript?</h5>
-                      </div>
-                      <div class="ans ml-2">
-                          <label class="radio"> <input type="radio" name="Douglas Crockford" value="Douglas Crockford"> <span>Douglas Crockford</span>
-                          </label>
-                      </div>
-                      <div class="ans ml-2">
-                          <label class="radio"> <input type="radio" name="Sheryl Sandberg" value="Sheryl Sandberg"> <span>Sheryl Sandberg</span>
-                          </label>
-                      </div>
-                      <div class="ans ml-2">
-                          <label class="radio"> <input type="radio" name="Brendan Eich" value="Brendan Eich"> <span>Brendan Eich</span>
-                          </label>
-                      </div>
-                  </div>
-                  <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
-              </div>
-              <div class="border">
-                <!-- answer is C -->
-                <div class="question bg-white p-3 border-bottom">
-                    <div class="d-flex flex-row justify-content-between align-items-center mcq">
-                        <h4>Coding Quiz</h4><span>(2 of 5)</span>
-                    </div>
-                </div>
-                <div class="question bg-white p-3 border-bottom">
-                    <div class="d-flex flex-row align-items-center question-title">
-                        <h3 class="text-danger">Q.</h3>
-                        <h5 class="mt-1 ml-2">Which one of these is a JavaScript package manager?</h5>
-                    </div>
-                    <div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="Node.js" value="Node.js"> <span>Node.js</span>
-                        </label>
-                    </div>
-                    <div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="TypeScript" value="TypeScript"> <span>TypeScript</span>
-                        </label>
-                    </div>
-                    <div class="ans ml-2">
-                        <label class="radio"> <input type="radio" name="npm" value="npm"> <span>npm</span>
-                        </label>
-                    </div>
-                </div>
-                <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
-            </div>
             <div class="border">
-              <!-- answer is D -->
               <div class="question bg-white p-3 border-bottom">
-                  <div class="d-flex flex-row justify-content-between align-items-center mcq">
-                      <h4>Coding Quiz</h4><span>(3 of 5)</span>
-                  </div>
-              </div>
-              <div class="question bg-white p-3 border-bottom">
-                  <div class="d-flex flex-row align-items-center question-title">
-                      <h3 class="text-danger">Q.</h3>
-                      <h5 class="mt-1 ml-2">Which tool can you use to ensure code quality?</h5>
-                  </div>
-                  <div class="ans ml-2">
-                      <label class="radio"> <input type="radio" name="Angular" value="Angular"> <span>Angular</span>
-                      </label>
-                  </div>
-                  <div class="ans ml-2">
-                      <label class="radio"> <input type="radio" name="jQuery" value="jQuery"> <span>jQuery</span>
-                      </label>
-                  </div>
-                  <div class="ans ml-2">
-                      <label class="radio"> <input type="radio" name="RequireJS" value="RequireJS"> <span>RequireJS</span>
-                      </label>
-                  </div>
-                  <div class="ans ml-2">
-                    <label class="radio"> <input type="radio" name="ESLint" value="ESLint"> <span>ESLint</span>
-                    </label>
-                </div>
-              </div>
-              <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
-          </div>
-          <div class="border">
-            <!-- answer is A -->
-            <div class="question bg-white p-3 border-bottom">
                 <div class="d-flex flex-row justify-content-between align-items-center mcq">
-                    <h4>Coding Quiz</h4><span>(4 of 5)</span>
+                  <h4>Coding Quiz</h4><span>(1 of 5)</span>
                 </div>
-            </div>
-            <div class="question bg-white p-3 border-bottom">
+              </div>
+              <div class="question bg-white p-3 border-bottom">
                 <div class="d-flex flex-row align-items-center question-title">
-                    <h3 class="text-danger">Q.</h3>
-                    <h5 class="mt-1 ml-2">Which built-in method returns the calling string value converted to lower case?</h5>
+                    <h3 id="target" class="text-danger">Q.</h3>
+                  <div id="selections" class="selections"></div>
                 </div>
-                <div class="ans ml-2">
-                    <label class="radio"> <input type="radio" name="toLowerCase()" value="toLowerCase()"> <span>toLowerCase()</span>
-                    </label>
-                </div>
-                <div class="ans ml-2">
-                    <label class="radio"> <input type="radio" name="toLower()" value="toLower()"> <span>toLower()</span>
-                    </label>
-                </div>
-                <div class="ans ml-2">
-                    <label class="radio"> <input type="radio" name="changeCase(case)" value="changeCase(case)"> <span>changeCase(case)</span>
-                    </label>
-                </div>
-                <div class="ans ml-2">
-                  <label class="radio"> <input type="radio" name="None of the Above" value="None of the Above"> <span>None of the Above</span>
-                  </label>
+              </div>
+              <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button>
               </div>
             </div>
-            <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
+          </div>
         </div>
-        <div class="border">
-          <!-- answer is B -->
-          <div class="question bg-white p-3 border-bottom">
-              <div class="d-flex flex-row justify-content-between align-items-center mcq">
-                  <h4>Coding Quiz</h4><span>(5 of 5)</span>
-              </div>
-          </div>
-          <div class="question bg-white p-3 border-bottom">
-              <div class="d-flex flex-row align-items-center question-title">
-                  <h3 class="text-danger">Q.</h3>
-                  <h5 class="mt-1 ml-2">Which of the following function of String object splits a String object into an array of strings by separating the string into substrings?</h5>
-              </div>
-              <div class="ans ml-2">
-                  <label class="radio"> <input type="radio" name="slice()" value="slice()"> <span>slice()</span>
-                  </label>
-              </div>
-              <div class="ans ml-2">
-                  <label class="radio"> <input type="radio" name="split()" value="split()"> <span>split()</span>
-                  </label>
-              </div>
-              <div class="ans ml-2">
-                  <label class="radio"> <input type="radio" name="replace()" value="replace()"> <span>replace()</span>
-                  </label>
-              </div>
-              <div class="ans ml-2">
-                <label class="radio"> <input type="radio" name="search()" value="search()"> <span>search()</span>
-                </label>
-            </div>
-          </div>
-          <div class="d-flex flex-row justify-content-between align-items-center p-3 bg-white"><button class="btn btn-primary d-flex align-items-center btn-danger" type="button"><i class="fa fa-angle-left mt-1 mr-1"></i>&nbsp;previous</button><button class="btn btn-primary border-success align-items-center btn-success" type="button">Next<i class="fa fa-angle-right ml-2"></i></button></div>
       </div>
-          </div>
-      </div>
-  </div>
-    
-    <script src="./assets/js/script.js"></script>
-</body>
+      
+      <script src="./assets/js/script.js"></script>
+  </body>
 </html>
