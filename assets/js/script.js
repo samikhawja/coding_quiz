@@ -2,7 +2,7 @@ const startTime = 1;
 let time = startTime * 60;
 var currentQuestionIndex = 0;
 var score = 0;
-
+var mixBut = document.getElementById("mixBut");
 const countdownEl = document.getElementById('countdown');
 var questionElement = document.getElementById('target');
 var selectionsElement = document.getElementById('selections');
@@ -58,3 +58,4 @@ var questions = [
 }
 ]
 // event listener call updateCountdown function
+document.getElementById("myBtn").addEventListener("click", updateCountdown)
